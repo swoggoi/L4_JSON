@@ -75,7 +75,7 @@ async function runTasks() {
     console.log(filteredUsers);
 
     
-    const todosRes = await fetch(user_todos);
+    const todosRes = await fetch(url_todos);
     const todos = await todosRes.json();
     const uncompleted = todos.filter(todo => !todo.completed);
     console.log(uncompleted);
